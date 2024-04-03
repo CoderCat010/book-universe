@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Booken - Get Your New Book Collections</title>
+  <title>Book Club</title>
   <meta name="title" content="Booken - Get Your New Book Collections">
   <meta name="description" content="This is a Book eCommerce html template made by codewithsadee">
 
@@ -18,9 +18,7 @@
   <!--google font link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- preload imgs-->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
@@ -30,7 +28,7 @@
 
 <body id="top">
   <!-- !header part -->
-<header class="header" data-header>
+  <header class="header" data-header>
     <div class="header-top">
       <div class="container">
 
@@ -120,7 +118,7 @@
   </header>
   <!--///////////////////////  -->
 
-  <!-- !main part -->
+  <!-- !main part starts -->
   <main>
     <article>
     <!-- ?section-1 starts -->
@@ -239,7 +237,7 @@
            <h2 class="h2 section-title">Featured Collections</h2>
           <p class="section-text">Contrary to popular belief, Lorem Ipsum is not simply random.</p>
          </div>
-
+         <!-- section-3 ul main -->
           <ul class="grid-list">
             <!-- todo 1st li parent -->
             <li>
@@ -681,34 +679,20 @@
             </li>
 
           </ul>
-
         </div>
       </section>
+      <!-- section-3 ends -->
 
-
-
-
-
-      <!-- 
-        - #OFFER
-      -->
-
-      <section class="section offer has-bg-image" aria-label="special offer"
-        style="background-image: url('./assets/images/section-bg.jpg')">
+      <!-- ?section-4 starts -->
+      <section class="section offer has-bg-image" aria-label="special offer" style="background-image: url('./assets/images/section-bg.jpg')">
+        <!-- todo section-3 main div -->
         <div class="container">
-
           <p class="section-subtitle">Special Offers</p>
-
           <h2 class="h2 section-title">All books are 50% off now! Don't miss such a deal!</h2>
+          <p class="section-text">You will learn how to animate shapes like circles, lines, and polygons. You'll also learn how to animate CSS properties like color and size.</p>
 
-          <p class="section-text">
-            You will learn how to animate shapes like circles, lines, and polygons. You'll also learn how to animate CSS
-            properties
-            like color and size.
-          </p>
-
+          <!-- *section 3 ul main -->
           <ul class="countdown-list">
-
             <li>
               <p class="countdown-time">15</p>
 
@@ -732,31 +716,21 @@
 
               <p class="countdown-label">Sec</p>
             </li>
-
           </ul>
 
           <a href="#" class="btn">Explore More</a>
-
         </div>
       </section>
+      <!-- section-3 endss -->
 
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
-
+      <!-- ?section-4 starts -->
       <section class="section popular" aria-label="popular collection">
+        <!-- todo section-4 main div -->
         <div class="container">
-
           <h2 class="h2 section-title">Popular Collections</h2>
+          <p class="section-text">Contrary to popular belief, Lorem Ipsum is not simply random.</p>
 
-          <p class="section-text">
-            Contrary to popular belief, Lorem Ipsum is not simply random.
-          </p>
-
+          <!-- todo section-3 1st ul main div -->
           <ul class="filter-list">
 
             <li>
@@ -773,15 +747,19 @@
 
           </ul>
 
+          <!-- todo section-3 1st ul main div -->
           <ul class="product-list has-scrollbar">
-
+            <!-- 1st li content -->
             <li class="scrollbar-item" data-filter="sell">
               <div class="product-card">
-
+                <!-- //// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
-                  <img src="./assets/images/book-9.png" width="384" height="480" loading="lazy" alt="Self Care"
+                  <!-- ///// -->
+                  <div>
+                    <img src="./assets/images/book-9.png" width="384" height="480" loading="lazy" alt="Self Care"
                     class="img-cover">
-
+                  </div>
+                  <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -802,7 +780,7 @@
 
                   </div>
                 </div>
-
+                <!-- //// -->
                 <div class="card-content">
 
                   <h3 class="h3">
@@ -823,14 +801,14 @@
 
               </div>
             </li>
-
+            <!-- 2nd li content -->
             <li class="scrollbar-item" data-filter="new">
               <div class="product-card">
-
+                <!-- /// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-10.png" width="384" height="480" loading="lazy" alt="Welcome to Space"
                     class="img-cover">
-
+                    <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -851,15 +829,12 @@
 
                   </div>
                 </div>
-
+                <!-- /// -->
                 <div class="card-content">
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Welcome to Space</a>
-                  </h3>
-
+                  <h3 class="h3"><a href="#" class="card-title">Welcome to Space</a></h3>
                   <data class="card-price" value="150">$150.00</data>
 
+                  <!-- /// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -867,19 +842,18 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
+            <!-- 3rd li content -->
             <li class="scrollbar-item" data-filter="sell">
+              <!-- /// -->
               <div class="product-card">
-
+                <!-- /// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-11.png" width="384" height="480" loading="lazy" alt="Monsoon"
                     class="img-cover">
-
+                    <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -900,7 +874,7 @@
 
                   </div>
                 </div>
-
+                <!-- /// -->
                 <div class="card-content">
 
                   <h3 class="h3">
@@ -918,17 +892,16 @@
                   </div>
 
                 </div>
-
               </div>
             </li>
-
+             <!-- 4th li content -->     
             <li class="scrollbar-item" data-filter="featured">
               <div class="product-card">
-
+                <!-- ///// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-12.png" width="384" height="480" loading="lazy"
                     alt="Every Thing You Ever" class="img-cover">
-
+                    <!-- /// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -949,15 +922,13 @@
 
                   </div>
                 </div>
-
+                <!-- //// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Every Thing You Ever</a>
                   </h3>
-
                   <data class="card-price" value="57">$57.00</data>
-
+                  <!-- //// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -965,19 +936,17 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
+             <!-- 5th li content -->
             <li class="scrollbar-item" data-filter="new">
               <div class="product-card">
-
+                <!-- /// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-13.png" width="384" height="480" loading="lazy"
                     alt="Graphic Design School" class="img-cover">
-
+                    <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -998,15 +967,13 @@
 
                   </div>
                 </div>
-
+                <!-- //// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Graphic Design School</a>
                   </h3>
-
                   <data class="card-price" value="100">$100.00</data>
-
+                  <!-- ///// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -1014,19 +981,17 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
+            <!-- 6th li content -->
             <li class="scrollbar-item" data-filter="sell">
               <div class="product-card">
-
+                <!-- /// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-14.png" width="384" height="480" loading="lazy" alt="Food Poison"
                     class="img-cover">
-
+                    <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -1047,15 +1012,14 @@
 
                   </div>
                 </div>
-
+                <!-- //// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Food Poison</a>
                   </h3>
-
                   <data class="card-price" value="76">$76.00</data>
 
+                  <!-- //// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -1063,19 +1027,17 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
+             <!-- 7th li content -->
             <li class="scrollbar-item" data-filter="featured">
               <div class="product-card">
-
+                <!-- ///// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-15.png" width="384" height="480" loading="lazy" alt="Design"
                     class="img-cover">
-
+                    <!-- //// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -1096,15 +1058,13 @@
 
                   </div>
                 </div>
-
+                <!-- //// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Design</a>
                   </h3>
-
                   <data class="card-price">Free</data>
-
+                  <!-- //// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -1112,19 +1072,17 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
+             <!-- 8th li content -->
             <li class="scrollbar-item" data-filter="new">
               <div class="product-card">
-
+                <!-- //// -->
                 <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src="./assets/images/book-16.png" width="384" height="480" loading="lazy" alt="World News"
                     class="img-cover">
-
+                    <!-- ///// -->
                   <div class="card-action">
 
                     <button class="action-btn" aria-label="quick view" title="Quick View">
@@ -1145,15 +1103,13 @@
 
                   </div>
                 </div>
-
+                <!-- ///// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">World News</a>
                   </h3>
-
                   <data class="card-price" value="20">$20.00</data>
-
+                  <!-- ///// -->
                   <div class="rating-wrapper">
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
@@ -1161,50 +1117,39 @@
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                     <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
                   </div>
-
                 </div>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
+      <!-- section-4 ends -->
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
+      <!-- ?section-5 starts -->
       <section class="section blog" aria-label="blog">
+        <!-- todo section-4 main div -->
         <div class="container">
-
           <h2 class="h2 section-title">Latest Blog</h2>
-
           <p class="section-text">
             Contrary to popular belief, Lorem Ipsum is not simply random.
           </p>
 
+          <!-- !section-5 ul main -->
           <ul class="has-scrollbar">
-
+            <!--* 1st li -->
             <li class="scrollbar-item">
               <div class="blog-card">
-
+                <!-- //// -->
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
                   <img src="./assets/images/blog-1.jpg" width="600" height="400" loading="lazy"
                     alt="Significant reading has info" class="img-cover">
                 </figure>
-
+                <!-- //// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Significant reading has info</a>
                   </h3>
-
+                  <!-- //// -->
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
@@ -1220,28 +1165,24 @@
                   <p class="card-text">
                     The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
                   </p>
-
                   <a href="#" class="btn card-btn">Read More...</a>
-
                 </div>
-
               </div>
             </li>
-
+            <!--* 2nd li --> 
             <li class="scrollbar-item">
               <div class="blog-card">
-
+                <!-- /// -->
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
                   <img src="./assets/images/blog-2.jpg" width="600" height="400" loading="lazy"
                     alt="Activities Book International" class="img-cover">
                 </figure>
-
+                <!-- /// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Activities Book International</a>
                   </h3>
-
+                  <!-- //// -->
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
@@ -1257,28 +1198,24 @@
                   <p class="card-text">
                     The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
                   </p>
-
                   <a href="#" class="btn card-btn">Read More...</a>
-
                 </div>
-
               </div>
             </li>
-
+            <!--* 3rd li --> 
             <li class="scrollbar-item">
               <div class="blog-card">
-
+                <!-- ////// -->
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
                   <img src="./assets/images/blog-3.jpg" width="600" height="400" loading="lazy"
                     alt="International activities of the book" class="img-cover">
                 </figure>
-
+                <!-- ///////// -->
                 <div class="card-content">
-
                   <h3 class="h3">
                     <a href="#" class="card-title">International activities of the book</a>
                   </h3>
-
+                  <!-- //// -->
                   <ul class="card-meta-list">
 
                     <li class="meta-item">
@@ -1294,29 +1231,18 @@
                   <p class="card-text">
                     The summer holidays are wonderful. Dressing for them can be significantly less so: Packing light...
                   </p>
-
                   <a href="#" class="btn card-btn">Read More...</a>
-
                 </div>
-
               </div>
             </li>
-
           </ul>
-
         </div>
       </section>
-
+      <!-- section-4 ends -->
     </article>
   </main>
+  <!-- main part ends -->
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
 
   <footer class="footer has-bg-image" style="background-image: url('./assets/images/section-bg.jpg')">
 

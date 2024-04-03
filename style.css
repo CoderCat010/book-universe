@@ -724,21 +724,10 @@ body {
 /*** responsive for large than 768px screen*/
 @media (min-width: 768px) {
 :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 3.5rem;
     --fs-2: 3rem;
     --fs-3: 2.4rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 80px;
-
   }
 
   .container { max-width: 720px; }

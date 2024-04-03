@@ -1,9 +1,7 @@
 'use strict';
 
-/**
- * add event on elements
- */
 
+/** add event on elements*/
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
     for (let i = 0; i < elem.length; i++) {
@@ -15,11 +13,7 @@ const addEventOnElem = function (elem, type, callback) {
 }
 
 
-
-/**
- * navbar toogle
- */
-
+/** navbar toogle*/
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -32,14 +26,9 @@ const toggleNavbar = function () {
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
 
-
-/**
- * active header & back top btn when window scroll down to 100px
- */
-
+/** active header & back top btn when window scroll down to 100px*/
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
-
 const activeElemOnScroll = function () {
   if (window.scrollY > 100) {
     header.classList.add("active");
@@ -53,11 +42,7 @@ const activeElemOnScroll = function () {
 addEventOnElem(window, "scroll", activeElemOnScroll);
 
 
-
-/**
- * filter functionality
- */
-
+/** filter functionality*/
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter]");
 

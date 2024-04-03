@@ -1,25 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
   --maximum-blue-green: hsl(184, 50%, 60%);
   --selective-yellow: hsl(42, 98%, 55%);
   --eerie-black_70: hsla(240, 1%, 14%, 0.7);
@@ -33,9 +12,6 @@
   --white_10: hsla(0, 0%, 100%, 0.1);
   --jet: hsl(225, 4%, 21%);
 
-  /**
-   * typography
-   */
 
   --ff-work-sans: 'Work Sans', sans-serif;
   --ff-jost: 'Jost', sans-serif;
@@ -53,38 +29,20 @@
   --fw-500: 500;
   --fw-700: 700;
 
-  /**
-   * spacing
-   */
 
   --section-padding: 60px;
 
-  /**
-   * radius
-   */
 
   --radius-circle: 50%;
   --radius-pill: 200px;
 
-  /**
-   * transition
-   */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
   --cubic-anim: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -150,14 +108,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 15px; }
 
@@ -335,14 +285,6 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-button { width: 10%; }
 
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header-top :is(.input-wrapper, .header-action-btn:last-child),
 .header-contact-link { display: none; }
 
@@ -491,14 +433,6 @@ body {
   pointer-events: all;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero .play-btn { display: none; }
 
 .hero {
@@ -525,14 +459,6 @@ body {
   max-width: 300px;
   margin-inline: auto;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #FEATURE
-\*-----------------------------------*/
 
 .feature { padding-block: 0; }
 
@@ -574,25 +500,9 @@ body {
 
 .feature-card .card-title { margin-block-end: 5px; }
 
-
-
-
-
-/*-----------------------------------*\
-  #FEATURED COLLECTION
-\*-----------------------------------*/
-
 .featured .section-text { margin-block: 10px 50px; }
 
 .featured .grid-list { gap: 10px; }
-
-
-
-
-
-/*-----------------------------------*\
-  #OFFER
-\*-----------------------------------*/
 
 .offer { text-align: center; }
 
@@ -621,14 +531,6 @@ body {
   margin-inline: auto;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #POPULAR
-\*-----------------------------------*/
-
 .popular .section-text { margin-block: 10px 40px; }
 
 .filter-list {
@@ -647,14 +549,6 @@ body {
 }
 
 .filter-btn.active { color: var(--maximum-blue-green); }
-
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
 
 .blog { padding-block-start: 0; }
 
@@ -714,14 +608,6 @@ body {
   padding-block: 12px;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
 .footer-top { border-block-end: 1px solid var(--granite-gray); }
 
 .footer-top .container { gap: 40px; }
@@ -769,14 +655,6 @@ body {
   margin-inline: auto;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 30px;
@@ -801,19 +679,9 @@ body {
 
 
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
 
-/**
- * responsive for large than 575px screen
- */
-
+/** responsive for large than 575px screen*/
 @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -824,12 +692,6 @@ body {
   .grid-list { grid-template-columns: 1fr 1fr; }
 
   .scrollbar-item { min-width: calc(50% - 5px); }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero .play-btn {
     display: block;
@@ -859,19 +721,9 @@ body {
 
 
 
-
-
-/**
- * responsive for large than 768px screen
- */
-
+/*** responsive for large than 768px screen*/
 @media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
+:root {
 
     /**
      * typography
@@ -888,12 +740,6 @@ body {
     --section-padding: 80px;
 
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 720px; }
 
@@ -923,30 +769,12 @@ body {
     font-weight: var(--fw-700);
   }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero .container {
     grid-template-columns: 1fr 0.7fr;
     align-items: center;
   }
 
-
-
-  /**
-   * FEATURED COLLECTION
-   */
-
   .featured .grid-list { gap: 30px; }
-
-
-
-  /**
-   * OFFER
-   */
 
   .offer .container { max-width: 420px; }
 
@@ -955,12 +783,6 @@ body {
   .countdown-list { gap: 40px; }
 
   .countdown-time { --fs-5: 2.4rem; }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer-bottom { text-align: left; }
 
@@ -978,56 +800,21 @@ body {
 
 
 
-
-
-/**
- * responsive for large than 992px screen
- */
-
+/** responsive for large than 992px screen*/
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 4rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 100px;
-
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 960px; }
-
   .grid-list { grid-template-columns: repeat(3, 1fr); }
-
   .btn { --fs-7: 1.6rem; }
-
   .scrollbar-item {
     min-width: calc(33.33% - 20px);
     width: calc(33.33% - 20px);
   }
-
-
-
-  /**
-   * HEADER
-   */
 
   .nav-close-btn,
   .navbar-top,
@@ -1122,31 +909,13 @@ body {
     animation: slideInTop 0.5s ease forwards;
   }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero { padding-block-start: 250px; }
 
   .hero-banner { max-width: unset; }
 
-
-
-  /**
-   * FEATURE
-   */
-
   .feature .grid-list { grid-template-columns: 1fr 1fr; }
 
   .feature-card .card-title { --fs-6: 1.8rem; }
-
-
-
-  /**
-   * OFFER
-   */
 
   .offer .container { max-width: 550px; }
 
@@ -1158,12 +927,6 @@ body {
 
   .countdown-label { font-size: var(--fs-4); }
 
-
-
-  /**
-   * FOOTER
-   */
-
   .footer-top .container { grid-template-columns: 1fr 0.4fr 0.5fr 0.5fr; }
 
   .footer-brand { padding-inline-end: 40px; }
@@ -1172,79 +935,27 @@ body {
 
 
 
-
-
-/**
- * responsive for large than 1200px screen
- */
-
+/*** responsive for large than 1200px screen*/
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
-
     --fs-1: 7rem;
-
   }
-
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1200px; }
 
   .grid-list { grid-template-columns: repeat(4, 1fr); }
 
-
-
-  /**
-   * HEADER
-   */
-
   .input-wrapper { max-width: 750px; }
 
   .navbar-list { gap: 50px; }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero-text { font-size: var(--fs-5); }
-
-
-
-  /**
-   * FEATURE
-   */
 
   .feature .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   .feature-card { height: 100%; }
 
-
-
-  /**
-   * OFFER
-   */
-
   .offer .container { max-width: 700px; }
-
-
-
-  /**
-   * POPULAR
-   */
 
   .popular .scrollbar-item {
     min-width: calc(25% - 22.5px);
@@ -1252,12 +963,6 @@ body {
   }
 
   .popular .has-scrollbar { padding-block-end: 50px; }
-
-
-
-  /**
-   * BACK TO TOP
-   */
 
   .back-top-btn {
     bottom: 70px;
